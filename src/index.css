@@ -11,3 +11,67 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#root {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: lightcyan;
+}
+
+#calculator {
+	--primary: #929AAB;
+	--secondary: #313131;
+	--tertiary: #525252;
+	--curve: 20px;
+	border: var(--primary) solid 1rem;
+	border-radius: var(--curve);
+	padding: 20px;
+	background-color: var(--secondary);
+	color: white;
+	width: 20rem;
+	height: 30rem;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+}
+
+#display {
+	color: inherit;
+	background-color: var(--tertiary);
+	border-radius: var(--curve);
+	grid-column-start: 1;
+	grid-column-end: 5;
+	overflow: hidden;
+}
+
+
+#numberKeys {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 3; 
+	grid-row-end: 7;
+	grid-gap: inherit;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+}
+
+.button {
+	color: inherit;
+	background-color: var(--tertiary);
+	border: 0.2rem solid var(--primary);
+	border-radius: var(--curve);
+	width: 1fr;
+	height: 1fr;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
