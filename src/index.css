@@ -1,15 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
 }
 
 #root {
@@ -44,14 +44,17 @@ code {
 	border-radius: var(--curve);
 	grid-column-start: 1;
 	grid-column-end: 5;
+	padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 	overflow: hidden;
 }
-
 
 #numberKeys {
 	grid-column-start: 1;
 	grid-column-end: 4;
-	grid-row-start: 3; 
+	grid-row-start: 3;
 	grid-row-end: 7;
 	grid-gap: inherit;
 	display: grid;
@@ -69,6 +72,8 @@ code {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-weight: normal;
+	font-size: large;
 }
 
 .button:hover {
